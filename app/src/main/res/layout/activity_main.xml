@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="#CAB499"
+        android:backgroundTint="#E9D0B2"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Selecting a type of task"
+            android:textSize="30sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="230dp">
+
+            <RadioButton
+                android:id="@+id/rdoDoor"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Install Door"
+                android:textColor="#070707"
+                android:textSize="30sp" />
+
+            <RadioButton
+                android:id="@+id/rdoShelf"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text=" Build Shelf"
+                android:textSize="30sp" />
+
+            <RadioButton
+                android:id="@+id/rdoFurniture"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Assemble Furniture"
+                android:textSize="30sp" />
+
+            <RadioButton
+                android:id="@+id/rdoWindows"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Install windows"
+                android:textSize="30sp" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/cbxWood"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text=" Wood (R200)"
+            android:textSize="30sp" />
+
+        <CheckBox
+            android:id="@+id/cbxNails"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Nails (R50)"
+            android:textSize="30sp" />
+
+        <CheckBox
+            android:id="@+id/cbxHinges"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text=" Hinges (R20)"
+            android:textSize="30sp" />
+
+        <CheckBox
+            android:id="@+id/cbxScrews"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Screws (R25)"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/editTextNumberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:hint="Enter number of hours"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="#6C973D"
+            android:text="Calculate cost"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Total cost"
+            android:textSize="40sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
